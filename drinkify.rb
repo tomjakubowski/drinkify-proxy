@@ -36,8 +36,8 @@ class DrinkifyProxy < Sinatra::Base
   get "/:artist.json" do
 
     headers \
-      "Content-Type" => "application/json",
       "Access-Control-Allow-Origin" => "*"
+    content_type "application/json", :charset => "utf-8"
     drinkify(params[:artist]).to_json
   end
 
