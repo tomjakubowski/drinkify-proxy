@@ -1,0 +1,4 @@
+require './drinkify'
+
+run DrinkifyProxy
+
