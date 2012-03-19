@@ -30,7 +30,7 @@ class DrinkifyProxy < Sinatra::Base
   end
 
   get "/" do
-    redirect to(drinkify_url)
+    redirect to(drinkify_url), 301
   end
 
   get "/:artist.json" do
